@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    position: relative;
+    height: 200vh;
+    background: linear-gradient(gold,rgb(117, 31, 216));
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    left: 20px;
+    justify-content: space-between;  
+    margin-top: 10px;
+    position: fixed;
+    z-index: 1000;
+    color: #000000;
+
+}
+header a{
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+header.light:hover{
+    background-color: #fff;
+}
+header .dark :hover{
+    background-color: #123;
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section img{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+section #mountains7{
+    position: absolute;
+    z-index: 3;
+
+
+}
+#mountains7::after{
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+}
+section h1{
+    position: fixed;
+    top: 160px;
+    z-index: 2;
+    color: #123;
+    font-size: 10px;
+}
+#moon{
+    mix-blend-mode: screen;
+}
+
+.foot{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(29, 3, 36);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    gap: 30px;
+    padding: 20px 40px 0 40px;
+}
+.light{
+    color: #123;
+}
+.dark{
+    color: #fff;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="malik.css">
+    </head>
+<body>
+    <button id="mood" >Light Mode</button>
+    <h1 style="color:black;margin-top: 20px;" >MALIK COMPANY</h1>
+    <h3 style="color:black">for selling technology</h3>
+        <div class="container">
+        
+            <div class="details">
+                <input type="text" placeholder="title" id="title">
+                <div class="price">
+                    <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+                    <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+                    <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+                    <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+                    <span id="total"></span>
+
+                </div>
+                <input type="text" placeholder="count" id="count">
+                <input type="text" placeholder="category" id="category">
+
+
+            </div>
+            <button id="creat">Create</button>
+
+            <input type="text" placeholder="search" id="search">
+            <div class="btnsearch">
+                <button id="btntitle">Search by title</button>
+                <button id="btncategory">Search by category</button>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                <tbody id="read">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+       
+    <script src="malik.js"></script>
+</body>
+</html>

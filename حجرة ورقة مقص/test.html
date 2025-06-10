@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="upper">
+        <i class="fa-regular fa-hand-back-fist" id="left"></i>
+        
+        <i class="fa-regular fa-hand-back-fist" id="right"></i>
+
+        </div>
+        <p>You and Me Let's Play!!</p>
+        <div class="lowwer">
+            <div>
+        <i class="fa-regular fa-hand-back-fist" id="rock" onclick="winner(this.id)"></i>
+        <span>Rock</span>
+    </div>
+    <div>
+        <i class="fa-regular fa-hand" id="peaper" onclick="winner(this.id)"></i>
+        <span>peaper</span>
+
+    </div>
+        <div>
+            <i class="fa-regular fa-hand-scissors" id="scissors" onclick="winner(this.id)"></i>
+            <span>Scissors</span>
+
+        </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:400vh;
+    background-color: #000;
+}
+#hole{
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+#jon{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    scale: 0.8;
+}
+.fixed{
+    position: fixed;
+}
+.absolute{
+    position: fixed;
+
+}
+#zoom{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 30px;
+    height: 30px;
+    width: 50px;
+    background:linear-gradient(rgb(201, 86, 33),rgb(0, 0, 0));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#zoom i{
+    font-size: 20px;
+}
